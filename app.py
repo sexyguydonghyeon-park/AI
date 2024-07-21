@@ -23,13 +23,13 @@ def recommend_travel_spots(location):
     return response.choices[0].message['content'].strip()
 
 # Streamlit 웹 애플리케이션 설정
-st.title("여행지 추천기")
+st.title("새 추억을 만들어보세요")
 
 # 사용자로부터 지역 입력받기
 location = st.text_input("여행지를 알고 싶은 지역을 입력해주세요 (예: 서울, 부산)")
 
 # 버튼을 누르면 OpenAI 호출
-if st.button("추천 여행지 생성"):
+if st.button("추억 생성하기"):
     if location:
         # OpenAI 모델 호출하여 여행지 추천
         travel_spots = recommend_travel_spots(location)

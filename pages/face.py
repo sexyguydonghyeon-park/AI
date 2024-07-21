@@ -31,7 +31,7 @@ def detect_and_classify_faces(image_path):
     return classifications
 
 # Streamlit 웹 애플리케이션 설정
-st.title("이미지 인식 및 분류 태그 추가기")
+st.title("이미지를 분류해 드릴게요")
 
 # 사용자로부터 이미지 업로드 받기
 uploaded_file = st.file_uploader("이미지를 업로드 해주세요", type=["jpg", "jpeg", "png"])

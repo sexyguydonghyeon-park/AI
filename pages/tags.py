@@ -23,7 +23,7 @@ def generate_quote(image_description):
     return response.choices[0].message['content'].strip()
 
 # Streamlit 웹 애플리케이션 설정
-st.title("이미지에 대한 감성적인 글귀 생성기")
+st.title("사진에 글을 더하다")
 
 # 사용자로부터 이미지 업로드 받기
 uploaded_file = st.file_uploader("이미지를 업로드 해주세요", type=["jpg", "jpeg", "png"])
